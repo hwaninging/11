@@ -1,14 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-//실습2
+//실습3
+
+void swap(int *x, int *y)
+{
+     int temp;
+     temp = *x;
+     *x = *y;
+     *y = temp;
+ }
+
 int main(int argc, char *argv[])
 {
-  int i = 300;
+  int a=3, b=5;
   
-  int *pi = &i;
-  char *pc = &i;
-  
-  printf("%i, %i, %i\n", i, *pi, *pc);                    
+  swap(a,b);
+  printf("a:%i, b:%i\n", a, b);                   
                                 
   system("PAUSE");	
   return 0;
